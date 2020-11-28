@@ -16,9 +16,9 @@ def parse()::
 				loc = d.split('#')[1]
 				config[d.split('#')[1]][]
 			if  d.startswith('https://vk.com/'):
-				config[loc]append(d)
+				config[loc].append(d)
 			elif d.startswith('https://t.me/'):
-				config[loc] = append(d)
+				config[loc].append(d)
 
 if  __name__ == '__main__':
 	parse()
